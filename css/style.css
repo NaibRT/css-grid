@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 50px 100px;
+}
+.header div {
+  border: 1px solid black;
+}
+.header div:nth-child(-n+2) {
+  background: #2e1e13;
+}
+.header div:nth-child(-n+2) div {
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border: 1px solid #39291f;
+  color: #ababab;
+}
+.header div:first-child {
+  padding: 5px;
+  padding-left: 100px;
+}
+.header div:first-child div {
+  display: inline-block;
+  padding: 8px;
+}
+.header div:first-child div a {
+  color: #ababab;
+}
+.header div:nth-child(2) {
+  text-align: center;
+  padding: 10px;
+}
+.header div:nth-child(2) span {
+  color: #ababab;
+}
+.header div:nth-child(2) div {
+  padding: 8px;
+}
+.header div:nth-child(3) {
+  text-align: center;
+  padding-right: 150px;
+}
+.header div:last-child {
+  background: #6aaf08;
+  text-align: center;
+  padding: 20px;
+}
+.header div:last-child ul li {
+  height: 65px;
+  display: inline-block;
+  margin-left: 35px;
+  position: relative;
+}
+.header div:last-child ul li:hover .dropdown {
+  display: block;
+}
+.header div:last-child ul li .dropdownadd {
+  left: 140px;
+  top: 0;
+}
+.header div:last-child ul li .dropdown, .header div:last-child ul li .dropdownadd {
+  min-width: 160px auto;
+  margin-top: 29px;
+  padding-left: 0px;
+  list-style-type: none;
+  list-style-position: inside;
+  text-align: center;
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+.header div:last-child ul li .dropdown li, .header div:last-child ul li .dropdownadd li {
+  left: 0;
+  border-bottom: 1px solid #ababab;
+  margin: 0;
+  padding: 10px;
+  height: 30px;
+  background: none;
+  width: 120px;
+  list-style-type: none;
+}
+.header div:last-child ul li .dropdown li:hover, .header div:last-child ul li .dropdownadd li:hover {
+  background: #ebebeb;
+}
+.header div:last-child ul li .dropdown li:hover .dropdownadd, .header div:last-child ul li .dropdownadd li:hover .dropdownadd {
+  display: block;
+}
+.header div:last-child ul li .dropdown li:hover a, .header div:last-child ul li .dropdownadd li:hover a {
+  color: #6aaf08;
+}
+.header div:last-child ul li .dropdown li a, .header div:last-child ul li .dropdownadd li a {
+  color: gray;
+}
+.header div:last-child ul li:last-child {
+  height: 30px;
+  padding: 10px;
+  background: white;
+}
+.header div:last-child ul li:last-child a {
+  color: #ababab;
+}
+.header div:last-child ul li:last-child:hover {
+  background: black;
+}
+.header div:last-child ul li:last-child:hover a {
+  color: white;
+}
+.header div:last-child ul li a {
+  text-decoration: none;
+  color: #ffffe7;
+  font-size: 20px;
+}
+.header div:last-child ul li a:hover {
+  color: #ffff81;
+}
+
+.wrapperslide {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 500px auto;
+  grid-gap: 10px;
+}
+.wrapperslide div {
+  background: red;
+}
