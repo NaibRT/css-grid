@@ -131,3 +131,7 @@ body {
 .wrapperslide div {
   background: red;
 }
+.wrapperslide div:first-child {
+  background: url(../images/bg1_002.jpg) no-repeat center center;
+  background-size: cover;
+}

@@ -150,6 +150,11 @@ body{
 	grid-gap:10px;
 	div{
 	background:red;
+	  &:first-child{
+         background:url(../images/bg1_002.jpg) no-repeat center center;
+         background-size:cover;
+
+	  }
 	}
 
 
