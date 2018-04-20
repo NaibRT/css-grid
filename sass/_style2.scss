@@ -1,0 +1,112 @@
+#services{
+	margin: 0px;
+	.wrapperservices{
+		display: grid;
+		grid-template-columns:2fr 3fr 2fr;
+		grid-auto-rows:auto;
+		grid-gap:10px 10px;
+		.child:hover{
+           border-color: #6aaf08;
+		}
+		div{
+          padding: 15px;
+         position: relative;
+
+                   h1{color: #2e1e13;}
+                   p{color: #ababab;}
+                   .icon{
+                 line-height: 10px;
+                   	background:#6aaf08;
+                    position: absolute;
+                    height: 80px;
+                    width: 80px;
+                    text-align: center;
+                    border-radius: 100%;
+                   }
+          &:first-child{
+          	text-align: center;
+          	grid-column:1/4;
+            box-sizing:border-box;
+            .box{
+            	margin: 0px;
+            	.o{
+            		color: #2e1e13;
+            	}
+            	.s{
+            		color:#6aaf08;
+            	}
+            	h1{
+            		margin: 0px;
+            		display: inline-block;
+            		font-size: 45px
+            	}
+            	p{
+            		margin: 0px;
+            		width: 500px;
+            		margin-left: 540px;
+            		font-size: 20px;
+            		color: #ababab;
+            	}
+
+            } 
+          }
+          &:nth-child(2){
+          	margin-left:200px; 
+          	border:1px solid lighten(#ababab, 15%);
+          	.icon{
+          		top: 11px;
+          		left: 200px;
+          	}
+          }
+           &:nth-child(3){
+          	grid-column:2/3;
+          	grid-row:2/5;
+          	background: url(../images/service-image.jpg) no-repeat center center cover;
+          }
+           &:nth-child(4){
+           	padding-left: 45px;
+          	margin-right:200px;
+          	border:1px solid lighten(#ababab, 15%); 
+          	.icon{
+          		top: 11px;
+          		right: 200px;
+          	}
+          }
+           &:nth-child(5){
+          	margin-left:200px; 
+          	border:1px solid lighten(#ababab, 15%);
+          	.icon{
+          		top: 11px;
+          		left: 200px;
+          	}
+          }
+           &:nth-child(6){
+           		padding-left: 45px;
+          	margin-right:200px;
+          	border:1px solid lighten(#ababab, 15%);
+          	.icon{
+          		top: 11px;
+          		right: 200px;
+          	} 
+          }
+           &:nth-child(7){
+          	margin-left:200px; 
+          border:1px solid lighten(#ababab, 15%);
+          	.icon{
+          		top: 11px;
+          		left: 200px;
+          	}
+          }
+           &:nth-child(8){
+           		padding-left: 45px;
+          	margin-right:200px; 
+          border:1px solid lighten(#ababab, 15%);
+          	.icon{
+          		top: 11px;
+          		right: 200px;
+          	}
+          }
+
+		}
+	}
+}
