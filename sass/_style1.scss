@@ -46,8 +46,8 @@ body{
        .corner{
       width: 80px;
     box-sizing: border-box;
-    left: 533px;
-    top: -93px;
+    left: 440px;
+    top: -94px;
     margin-top: -94px;
     margin-left: 513px;
     margin: 0px;
@@ -81,7 +81,7 @@ body{
 
              height:65px;
             display:inline-block;
-            margin-left:35px;
+            margin:0px 10px;
             position:relative;
                             .dropdownadd{
                               left:140px;
@@ -107,6 +107,7 @@ body{
                          height:30px;
                          background:none;
                          width:120px;
+                         transition: display 2s;
                             &:hover{
                                  .dropdownadd{
                                     display:block;
@@ -131,6 +132,7 @@ body{
               height:30px;
                 padding:10px;
                 background:white;
+                transition: background 2s;
                    a{
                    color:#ababab;
                     }
@@ -146,6 +148,7 @@ body{
               text-decoration:none;
               color:#ffffe7;
               font-size:20px;
+              transition: color 1s;
               &:hover{
                   color:darken(#ffffe7,20%);
                  }
@@ -169,7 +172,7 @@ body{
   
       .slider_inner{
       width: 100%;
-         background:url(../images/slide3.jpg) no-repeat ;
+         background:url(../images/slide3.jpg) no-repeat center center ;
          background-size:cover;
          .overlay{
           box-sizing:border-box;
@@ -186,6 +189,7 @@ body{
              padding:10px;
              text-align: center;
              line-height:30px;
+             transition: background 2s;
             a{
               color: #ababab;
               text-decoration: none;
@@ -208,9 +212,13 @@ body{
           }
           .but1{
             right: 0;
+            transition: right 1s;
             img{
                position: relative;
                right: -30px;
+               display:none;
+               transition: display 2s;
+               transition: right 2s;
             }
             &:hover{
              a{
@@ -218,16 +226,20 @@ body{
              }
              img{
                  right: 201px;
+                 display:block;
              }
             }
            }
            .but2{
             left: 0;
+            transition: left 1s;
              img{
+             transition: left 1s;
               height: 160px;
               width: 200px;
                position: relative;
                left: -200px;
+                   object-fit: cover;
             }
             &:hover{
              a{
